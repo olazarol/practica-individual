@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="astroclub.css">
+</head>
+
+<body>
+    <form action="destino.html" method="get">
+        <P><b><u>SIEMPRE PONER LA LINEA DENTRO DEL BODY</u></b> <br> <br>
+            SIGNO DE MENOR form action="destino.html" method="get" SIGNO DE MAYOR<br><br>
+            /form
+        </P>
+        <p>BOTÓN</p>
+        <button></button><br><br><br>
+        <P><b><u>BOTON ENVIAR</u></b> </P>
+        <input type="submit" value="enviar"><br><br>
+        <p><b><u>BOTON RESETEAR</u></b></p>
+        <input type="reset" value="resetear"><br><br>
+        <p><b><u>PONER CASILLA PARA QUE EL USUARIO RELLENE TEXTO</u></b></p>
+        <input type="text"><br><br>
+        <p><b><u>PONER CASILLA CON TEXTO ESCRITO DENTRO YA PREDEFINIDO</u></b></p>
+        <input type="text" value="texto escrito"><br><br>
+        <p><b><u>PONER CASILLA PARA QUE EL USUARIO RELLENE TEXTO ESCRITO CON AYUDA DENTRO</u></b></p>
+        <input type="text" placeholder="Usuario"><br><br>
+        <p><b><u>PARA ESCRIBIR USUARIO DELANTE DE LA CASILLA</u></b></p>
+        <label for="">Usuario</label><br><br>
+        <p><b><u>PARA QUE LA CASILLA TENGA QUE TENER ESCRITO REQUERIDO</u></b></p>
+        <input type="text" placeholder="Usuario" required><br><br>
+        <p><b><u>PARA PONER UNA CASILLA PARA CONTRASEÑA CON LA PALABRA CONTRASEÑA DELANTE</u></b></p>
+        <label for="">Contraseña</label>
+        <input type="password" placeholder="Contraseña"><br><br>
+        <p><b><u>PARA CASILLA CON EDAD Y VALOR MINIMO DE EDAD </u></b></p>
+        <label for="">Edad</label>
+        <input type="number" min="0" max="10" placeholder="Edad"><br><br>
+        <p><b><u>PARA CASILLA CON FECHA Y ESCRITO DELANTE FEHCA</u></b></p>
+        <label for="">Fecha</label>
+        <input type="date" name="fecha"><br><br>
+        <p><b><u>PARA CASILLA CON HORA Y ESCRITO DELANTE HORA</u></b></p>
+        <label for="">Hora</label>
+        <input type="time" placeholder="Hora"> <br>
+        <p><b><u>PARA SELECCIÓN DE PRODUCTO CON PRESELECCIÓN DE PESCADO</u></b></p>
+        <label for="">Servicio:</label>
+        <input type="radio" name="boton" value="cada">Carne
+        <input type="radio" name="boton" value="pescado" checked>Pescado
+        <input type="radio" name="boton" value="verduras">Verduras
+        <input type="radio" name="boton" value="postre">Postre
+        <br><br>
+        <p><b><u>PARA SELECCION DE PRODUCTO SIN PRESELECCIÓN DE ALGUNO</u></b></p>
+        <label for="">Servicio:</label>
+        <input type="radio" name="boton" value="carne">Carne
+        <input type="radio" name="boton" value="pescado">Pescado
+        <input type="radio" name="boton" value="verduras">Verduras
+        <input type="radio" name="boton" value="postre">Postre
+        <br><br>
+        <p><b><u>PARA PODER SELECCIONAR MÁS DE UN PRODUCTO</u></b></p>
+        <label for="">Servicio:</label>
+        <input type="checkbox" name="boton" value="carne"> Carne
+        <input type="checkbox" name="boton" value="carne"> Pescado
+        <input type="checkbox" name="boton" value="carne"> Verdura
+        <input type="checkbox" name="boton" value="carne"> Postre
+        <br><br>
+        <p><b><u>PARA ACEPTAR ACUERDO CON VALOR REQUERIDO OBLIGATORIAMENTE</u></b></p>
+        <label for="">Acepta el acuerdo?:</label>
+        <input type="checkbox" name="aceptar" value="aceptar" required> Aceptar
+        <br><br>
+        <p><b><u>PARA INCLUIR COLOR</u></b></p>
+        <input type="color">
+        <br><br>
+        <p><b><u>PARA INCLUIR UN RANGO ENTRE DOS VALORES</u></b></p>
+        <input type="range" name="rango" min="40" max="100" step="20">
+        <br>
+        <P><b><u>PARA QUE EMPIECE CON UN VALOR MÍNIMO DE 20</u></b> </P>
+        <input type="range" name="rango" value="20">
+        <br>
+        <p><b><u>PARA ELEGIR UN ARCHIVO</u></b></p>
+        <input type="file">
+        <br>
+        <p><b><u>PARA HACER LA ESQUINA MÁS GRANDE Y CREZCA EL CAMPO</u></b></p>
+        <br>
+        <textarea name="testarea" id="" rows="7" cols="60" placeholder="escribe"></textarea>
+        <br>
+        <p><b><u>MENUS DESPLEGABLES</u></b></p>
+        <select name="menu" size="3" multiple>
+            <optgroup label="Deportes">
+                <option value="sin-seleccionar">------</option>
+                <option value="opcione1">Fútbol</option>
+                <option value="opcion2">Balonceso</option>
+            </optgroup>
+
+            <optgroup label="Música">
+                <option value="sin-seleccionar">------</option>
+                <option value="Jazz">tenis</option>
+                <option value="Rock">Opción dos</option>
+            </optgroup>
+        </select>
+        <br>
+        <p><b><u>SI NO QUIERO QUE SE ESCRIBA EN UN CAMPO, POR EJEMPLO PARA CAMBIAR SÓLO LA CONTRASEÑA Y NO EL USUARIO.
+                    Si quiero que al hacer click también en el for nombre, tengo que ponerle un ID que se llame igual
+                    que el FOR</u></b></p>
+        <label for="nombre-juan">Nombre:</label>
+        <input type="text" id="nombre-juan" name="nombre" placeholder="Nombre" disabled value="JAVI">
+    </form>
+    <br>
+    <p><b><u>PARA HACER UN CAMPO DE SOLO LECTURA</u></b></p>
+    <label for="">Nombre:</label>
+    <input type="text" name="nombre" readonly disabled value="JAVI">
+
+    <br>
+    <p><b><u>COMO PONER EMAIL</u></b></p>
+    <input type="email" name="EMAIL">
+    <p>para poner un mes</p>
+    <input type="month" name="mes">
+    <br>
+    <p><b><u>PARA PONER UNA SEMANA</u></b></p>
+    <input type="week" name="semana">
+    <br>
+    <p><b><u>PARA PONER FECHA Y HORA</u></b></p>
+    <input type="datetime-local" name="fecha-hora">
+    <br>
+    <p><b><u>PONER UNA BARRA COMO CARGANDO</u></b></p>
+    <label for="barra-de-progreso">Barra de Progreso</label>
+    <progress></progress>
+    </form>
+    <br><br><br>
+    <p><b><u>REALIZACIÓN DE EJERCICIO</u></b></p>
+
+    <form action="destino.html" method="get">
+        <br>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br><br>
+            <label for="">Apellidos:</label>
+            <input type="text" name="apellidos" placeholder="Apellidos" required>
+            <br><br>
+            <label for="">Edad</label>
+            <input type="number" min="18" max="35" name="edad" placeholder="Edad">
+            <br><br>
+            <label for="">Fecha</label>
+            <input type="date" name="fecha" required>
+        </fieldset>
+        <br><br><br>
+        <label for="">Selección multiple:</label>
+        <input type="checkbox" name="deporte" value="Futbol" checked> Futbol
+        <input type="checkbox" name="deporte" value="Balonceso"> Baloncesoto
+        <input type="checkbox" name="deporte" value="Tenis"> Tenis
+        <br><br><br>
+        <label for="">Estado civil:</label>
+        <input type="radio" name="estado" value="soltero" checked required>Soltero/a
+        <input type="radio" name="estado" value="Casado" required>Casado/a
+        <input type="radio" name="estado" value="Viudo" required>Viudo/a
+        <br><br><br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="resetear">
+    </form>
+</body>
+
+</html>
